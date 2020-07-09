@@ -13,17 +13,5 @@ public class DockerspringbootApplication {
 		SpringApplication.run(DockerspringbootApplication.class, args);
 	}
 
-	@Component
-	public class MyBean implements CommandLineRunner {
-		private final Environment env;
-
-		public MyBean(Environment env) {
-			this.env = env;
-		}
-
-		public void run(String... args) {
-			System.out.println("teste%%%%%%%%%%%%%%"+ env.getProperty("teste1"));
-		}
-
-	}
+	
 }

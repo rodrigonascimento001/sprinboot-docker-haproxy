@@ -57,9 +57,4 @@ public class ProductController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping("/container/test")
-    public String get(){
-        return new String("hello from server "+env.getProperty("container"));
-
-    }
 }
